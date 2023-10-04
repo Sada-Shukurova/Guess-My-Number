@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess my number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guess My Number!</h1>
+        <p class="between">* Between 1 and 20 *</p>
+        <button class="btn again">Play again!</button>
+        <div class="number glow">?</div>
+    </header>
+    <main>
+        <section class="left">
+            <input type="number" class="guess" oninput="this.value = this.value.slice(0, 2)" />
+            <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+            <p class="message"></p>
+            <div id="fireworks-container"></div>
+            <p class="label-score">
+                <i class="fa-solid fa-trophy fa-beat-fade"></i>
+                Score: <span class="score">20</span>
+            </p>
+            <p class="label-highscore">
+                <i class="fa-solid fa-medal fa-beat-fade"></i> Highscore: <span class="highscore">0</span>
+            </p>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
+        integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/tsparticles-preset-fireworks@2.12.0/tsparticles.preset.fireworks.min.js
+"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles-preset-fireworks@2/tsparticles.preset.fireworks.bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
