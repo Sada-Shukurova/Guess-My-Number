@@ -3,7 +3,7 @@
 // selecting body
 const body = document.querySelector( 'body' );
 
-// getting html elements⬇️
+// getting html elements⬇
 const checkBtn = document.querySelector( '.check' );
 const guess = document.querySelector( '.guess' );
 const message = document.querySelector( '.message' );
@@ -13,7 +13,8 @@ const againBtn = document.querySelector( '.again' );
 const highscore = document.querySelector( '.highscore' );
 const glow = document.querySelector( '.glow' );
 const heading = document.querySelector( 'h1' );
-// defining secret number⬇️
+
+// defining secret number⬇
 
 let secretNumber = Math.trunc( Math.random() * 20 ) + 1;
 
