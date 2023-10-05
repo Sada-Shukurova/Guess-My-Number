@@ -183,6 +183,7 @@ againBtn.addEventListener( 'click', function () {
     body.style.backgroundColor = '#222';
     number.style.width = '15rem';
     guess.removeAttribute( 'disabled' );
+    checkBtn.disabled = false; // enable the "Check!" button
     guess.focus();
     guess.style.color = "#360033";
     message.style.color = "#360033";
