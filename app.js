@@ -134,7 +134,7 @@ function gameLogic () {
         if ( scoreValue > 1 ) {
             // when guess is higher or lower than secret number
             // message.textContent = guessValue > secretNumber ? '📈Too high' : '📉 Too low';
-            displayMessage( guessValue > secretNumber ? '⬆️Too high' : '⬇️ Too low' );
+            displayMessage( guessValue > secretNumber ? '⬆️Too high, Try less' : '⬇️ Too low, Try high' );
             scoreValue--;
             score.textContent = scoreValue;
             guess.focus();
@@ -176,7 +176,7 @@ againBtn.addEventListener( 'click', function () {
     scoreValue = 20;
     secretNumber = Math.trunc( Math.random() * 20 ) + 1;
     message.innerHTML = '';
-    displayMessage( 'Guessing...' );
+    displayMessage( ' G u e s s i n g . . . ' );
     score.textContent = scoreValue;
     number.textContent = '?';
     let guessValue = guess.value = '';
