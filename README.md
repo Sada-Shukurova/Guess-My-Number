@@ -7,7 +7,7 @@
 - **HTML**: For structuring the game interface.
 - **CSS**: For styling the game and ensuring a visually appealing layout.
 - **JavaScript**: For game logic and interactivity.
-- **tsparticles**: A used to create stunning particle effects that enhance the game's visuals.
+- **tsparticles**: Used to create stunning particle effects that enhance the game's visuals.
 
 ## Features
 
